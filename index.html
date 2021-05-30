@@ -1,149 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <title>Nguyen Thanh Binh - B17DCDT021</title>
-  
-  <style>
+    <meta charset="utf-8">
+    <meta name="nhan likeport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>IMAGE GALERY</title>
 
-  </style>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Favicons -->
   
+    <meta name="theme-color" content="#7952b3">
+
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
 </head>
+
 <body>
-  <!--menu-->
-  <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top" id="menu">
-    <div class="container-fluid">
-        <a class="navbar-brand  " href="#">
-          <i class="fa fa-home active"></i> HOME
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" herf="#"> About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" herf="#"> Services</a>
-              </li>                    
-              <li class="nav-item">
-                  <a class="nav-link" herf="#"> Conect </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-success" herf="#"><i class="fas fa-sign-in-alt"></i> Log in</a>
-            </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
 
-  <div class="sidebar-container">
-    <div class="sidebar-logo">
-      <i class="fas fa-user-circle"> Profile</i>
-    </div>
-    <ul class="sidebar-navigation">
-      <li>
-        <a href="index.html">
-          <i class="far fa-file-alt" aria-hidden="true"></i> Homepage
-        </a>
-      </li>
-      <li>
-        <a href="page1.html">
-          <i class="far fa-file-alt" aria-hidden="true"></i> Page1
-        </a>
-      </li>
-      <li>
-        <a href="binhnt.html">
-          <i class="far fa-file-alt active" aria-hidden="true"></i> Page2
-        </a>
-      </li>
-      <li>
-        <a href="hieu.html">
-          <i class="far fa-file-alt" aria-hidden="true"></i> Page3
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="far fa-file-alt" aria-hidden="true"></i> Page4
-        </a>
-      </li>
-      <li class="header">More</li>
-      <li>
-        <a href="#">
-          <i class="far fa-times-circle" aria-hidden="true"></i> Exit
-        </a>
-      </li>
-    </ul>
-  </div>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+                    <strong>Lê Quang Phú - B17DCDT141</strong>
+                </a>
 
-  <div class="container-fluid" id="gallery">
-    <div class="row welcome text-center">
-      <div class="col-12">
-          <h1 class="display-4">BÀI TẬP NHÓM</h1>
-      </div>
-      <!-- Horizontal Rule -->
-      <hr> 
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3 ">
-        <div class="card mb-2 mb-md-4 mb-4" style="width:300px">
-          <img class="card-img-top" src="./ha/anh5.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">Dương Quang Hà</h4>
-            <p class="card-text">Mã sinh viên B17DCDT059</p>
-            <a href="page1.html" class="btn btn-primary">See Profile</a>
-          </div>
+            </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 ">
-        <div class="card mb-2 mb-md-4 mb-4" style="width:300px">
-          <img class="card-img-bottom" src="./binh/binh5.png" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">Nguyễn Thanh Bình</h4>
-            <p class="card-text">Mã sinh viên B17DCDT021</p>
-            <a href="binhnt.html" class="btn btn-primary">See Profile</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 ">
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="./hieu/img1.PNG" alt="Card image" style="width:100%" height="395px">
-          <div class="card-body">
-            <h4 class="card-title">Nguyễn Bỉnh Hiếu</h4>
-            <p class="card-text">Mã sinh viên B17DCDT073</p>
-            <a href="hieu.html" class="btn btn-primary">See Profile</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 ">
-        <div class="card" style="width:300px">
-          <img class="card-img-bottom" src="./binh/binh5.png" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">xxx</h4>
-            <p class="card-text">Mã sinh viên B17DCDTxxx</p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
-        </div>
-      </div>
-    </div>	
-  </div>
+    </header>
 
-  <div class="container-fluid padding" id="footer">
-    <div class="row welcome text-center">
-      <div class="col-12">
-        <h1 class="display-4">Welcome to my team</h1>
-      </div>
-    </div>
-  </div>
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light"><b style="  text-shadow: 2px 2px 5px red;">WELCOM TO MY IMAGE GALERY</b></h1>
+                    <a href="https://www.facebook.com/lequangphu270699" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> Follow My Facebook </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/43851742_2139081809675644_8497840262561660928_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=pj3gPzozEBYAX-f6WU5&_nc_ht=scontent-hkg4-1.xx&oh=e6f197200017105236f2f8b2094f5325&oe=60D955D5" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="" />
+
+                        <img src= "https://scontent-hkg4-2.xx.fbcdn.net/v/t1.6435-9/53703453_1259150674243253_8663863378734743552_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=n_K0juw5sMEAX88HjI4&_nc_ht=scontent-hkg4-2.xx&oh=51b7cbb9a4e5df4a7d5da80b7b376711&oe=60D7072C"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.6435-9/31318392_977961525702734_3858773720248090624_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=4ZoXjT_HsAsAX977v-W&_nc_ht=scontent.fhan5-7.fna&oh=21f5b4dfb0d578be21f4aed3476faff7&oe=60DA8AC9" class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                        <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/29792552_158726058104535_4349263495166951424_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=19026a&_nc_ohc=YnxdZ9x_amIAX8XZwBl&_nc_ht=scontent-hkg4-1.xx&oh=41cd163d63e002d790607eb3b328b3c8&oe=60D8DB50" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.18169-9/27067594_1930478693936307_8421238759457396763_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=730e14&_nc_ohc=U9BPlpryS4IAX9_pyeV&_nc_ht=scontent-hkg4-1.xx&oh=00562dc5ab58ed5f4876e8da3f4b1650&oe=60D7A1E1"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" />
+
+                        <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/124386496_2727717097545792_3110019017923163111_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=pkVQ5i0sQHYAX-qqyVL&_nc_ht=scontent-hkg4-1.xx&oh=251aaf82ba7d3302040357609bcf5540&oe=60D8A92D"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted py-5" style="background-color: black;">
+        <div class="container">
+            <p class="float-end mb-1">
+            </p>
+            <p class="mb-1"><b style="font-size: 20px;color: white;">CẢM ƠN BẠN ĐÃ XEM THƯ VIỆN ẢNH CỦA TÔI</b> </p>
+            <p class="mb-0" style="font-size: 20px;color: white;">XIN CHÀO VÀ HẸN GẶP LẠI !!!</p>
+        </div>
+    </footer>
+
+
 
 </body>
+
 </html>
